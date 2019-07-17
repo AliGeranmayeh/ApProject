@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefWidth="658.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="728.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@king.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="450.0" prefWidth="656.0" style="-fx-background-image: king.jpg;">
+         <children>
+            <HBox blendMode="DIFFERENCE" layoutX="205.0" layoutY="257.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: #E8EFF4;">
+               <children>
+      
+                  <TextField fx:id="textField" prefHeight="26.0" prefWidth="251.0" promptText="Username" stylesheets="@Styles2.css" />
+               </children>
+            </HBox>
+            <HBox blendMode="DIFFERENCE" layoutX="204.0" layoutY="293.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: #E8EFF4;">
+               <children>
+                  <PasswordField fx:id="passField" prefHeight="26.0" prefWidth="250.0" promptText="Password" stylesheets="@Styles2.css" />
+               </children>
+            </HBox>
+            <Label layoutX="199.0" layoutY="225.0" text="LOGIN" textFill="#25004a">
+               <font>
+                  <Font name="Cambria Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="14.0" text="CHESS" textFill="#200546">
+               <font>
+                  <Font name="Cambria Bold" size="72.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnClick" blendMode="COLOR_BURN" layoutX="359.0" layoutY="325.0" mnemonicParsing="false" onAction="#clickSignin" prefHeight="32.0" prefWidth="95.0" style="-fx-background-color: #D8D7DB;" stylesheets="@Styles.css" text="SIGN IN" textFill="#440068" underline="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label blendMode="DARKEN" layoutX="14.0" layoutY="381.0" prefHeight="25.0" prefWidth="251.0" style="-fx-background-color: #D7D8DB;" text="DONT HAVE ACCOUNT ?" textFill="#2b0340">
+               <font>
+                  <Font name="Khmer UI Bold" size="21.0" />
+               </font></Label>
+            <Button fx:id="registerButton" layoutX="268.0" layoutY="375.0" mnemonicParsing="false" onAction="#clickRegister" prefHeight="37.0" prefWidth="123.0" stylesheets="@Styles.css" text="REGISTER" textFill="#440068" underline="true">
+               <font>
+                  <Font name="Khmer UI Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="close" blendMode="COLOR_BURN" layoutX="528.0" layoutY="37.0" mnemonicParsing="false" onAction="#clickclose" prefHeight="32.0" prefWidth="95.0" style="-fx-background-color: #D8D7DB;" stylesheets="@Styles.css" text="EXIT" textFill="#440068" underline="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </AnchorPane>
+   </children>
+</GridPane>

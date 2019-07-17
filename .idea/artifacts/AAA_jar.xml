@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="AAA:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AAA_jar</output-path>
+    <root id="archive" name="AAA.jar">
+      <element id="module-output" name="AAA" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/sqlite-jdbc-3.27.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/directory/postgresql-42.2.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
